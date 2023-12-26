@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#switchLogin" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF1493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomeController">
+   <children>
+      <ImageView fitHeight="208.0" fitWidth="204.0" layoutX="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/gender-ikon.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="203.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDARA">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="232.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR RIGHTS ARE ALSO OUR RIGHTS" textAlignment="JUSTIFY" wrappingWidth="145.00781446695328">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="227.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOIN THE FIGHT LIKE A GIRL MOVEMENT" wrappingWidth="145.0078125">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF1493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="131.0" layoutX="478.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="14.0" prefHeight="60.0" prefWidth="613.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/gender-ikon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="66.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gendara" wrappingWidth="84.80337524414062">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="571.0" layoutY="16.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/bunder-5.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="519.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile" textAlignment="CENTER" wrappingWidth="51.00001531839371">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#education" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Education" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#genara" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Genara" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="296.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#lapor" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Lapor" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="67.0" fitWidth="131.0" layoutX="368.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-3.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutY="85.0" prefHeight="233.0" prefWidth="613.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="609.0">
+               <children>
+                  <Text fx:id="paragraf1" layoutX="167.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="362.8033142089844" />
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="26.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Screenshot_2023-12-23_103926-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="85.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Screenshot_2023-12-23_104013-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="507.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Screenshot_2023-12-23_104137-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="paragraf2" layoutX="40.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="434.8033142089844" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Line endX="9.0" endY="76.0" layoutX="182.0" layoutY="331.0" startX="9.0" startY="-13.0" stroke="WHITE" />
+      <Line endX="9.0" endY="76.0" layoutX="276.0" layoutY="331.0" startX="9.0" startY="-13.0" stroke="WHITE" />
+      <Line endX="9.0" endY="76.0" layoutX="87.0" layoutY="332.0" startX="9.0" startY="-13.0" stroke="WHITE" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

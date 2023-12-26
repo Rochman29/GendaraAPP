@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF1493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tips1Controller">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="131.0" layoutX="460.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="14.0" prefHeight="60.0" prefWidth="613.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="29.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/gender-ikon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="82.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gendara" wrappingWidth="84.80337524414062">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="571.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Screenshot%202023-12-23%20132126.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="485.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bela Diri" textAlignment="CENTER" wrappingWidth="84.803386002779">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="27.0" layoutY="11.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Screenshot_2023-12-23_135459-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="67.0" fitWidth="131.0" layoutX="25.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-3.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrol" fitToHeight="true" layoutY="85.0" prefHeight="262.0" prefWidth="613.0">
+        <content>
+          <AnchorPane fx:id="ancorcontent" minHeight="0.0" minWidth="0.0" prefHeight="427.0" prefWidth="595.0">
+               <children>
+                  <AnchorPane layoutX="29.0" layoutY="14.0" prefHeight="70.0" prefWidth="73.0" style="-fx-background-color: #FF1493;">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="51.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Screenshot_2023-12-23_103926-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="definisi" layoutX="122.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="473.19854736328125" />
+                  <Text fx:id="materi" layoutX="29.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No" wrappingWidth="562.6744689941406" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#tambahMateri" styleClass="EducationButton" stylesheets="@style.css" text="Tambah Materi" textAlignment="CENTER" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#hapusMateri" styleClass="EducationButton" stylesheets="@style.css" text="Hapus Materi" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

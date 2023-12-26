@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF1493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenaraController">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="131.0" layoutX="478.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="14.0" prefHeight="60.0" prefWidth="613.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="29.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/gender-ikon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="82.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gendara" wrappingWidth="84.80337524414062">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="564.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Screenshot%202023-12-23%20163520.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="485.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genara" textAlignment="CENTER" wrappingWidth="84.803386002779">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#education" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Education" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#genara" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Genara" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="305.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#lapor" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Lapor" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="67.0" fitWidth="131.0" layoutX="366.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-3.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutY="85.0" prefHeight="233.0" prefWidth="613.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="609.0">
+               <children>
+                  <TextField layoutX="214.0" layoutY="167.0" promptText="Type here . . ." />
+                  <ButtonBar layoutX="206.0" layoutY="159.0" prefHeight="40.0" prefWidth="245.0">
+                    <buttons>
+                      <Button minWidth="16.0" mnemonicParsing="false" prefHeight="25.0" text="Send" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Line endX="9.0" endY="76.0" layoutX="93.0" layoutY="331.0" startX="9.0" startY="-13.0" stroke="WHITE" />
+      <Line endX="9.0" endY="76.0" layoutX="192.0" layoutY="331.0" startX="9.0" startY="-13.0" stroke="WHITE" />
+      <Line endX="9.0" endY="76.0" layoutX="288.0" layoutY="331.0" startX="9.0" startY="-13.0" stroke="WHITE" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="40.0" prefWidth="73.0" styleClass="EducationButton" stylesheets="@style.css" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 23, 2023, 9:30:00 PM
+    Author     : lenovo
+*/
+.EducationButton{
+    -fx-background-color:  lightgrey;
+    -fx-background-radius: 12px;
+}
+.EducationButton:hover{
+    -fx-background-color:  #FF1493;
+    -fx-border-color: lightgrey;
+    -fx-border-radius: 12px;
+    -fx-text-fill: lightgrey;
+}
+.BelaDiriButton{
+    -fx-background-color:  #FF1493;
+}
+.BelaDiriButton:hover{
+    -fx-text-fill:  #FF1493;
+    -fx-border-color:  #FF1493;
+    -fx-background-color: lightgrey;
+}
+.submitButton{
+    -fx-background-color:  #ff66c4;
+    -fx-background-radius: 12px;
+}
+.submitButton:hover{
+    -fx-background-radius: 12px;
+    -fx-background-color:  white;
+    -fx-border-color: #ff66c4;
+    -fx-text-font: bold;
+}
+

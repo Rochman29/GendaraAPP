@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF1493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PerempiController">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="131.0" layoutX="462.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="14.0" prefHeight="60.0" prefWidth="613.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="29.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/gender-ikon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="82.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gendara" wrappingWidth="84.80337524414062">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="571.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Screenshot%202023-12-23%20132343.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="485.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perempi" textAlignment="CENTER" wrappingWidth="84.803386002779">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="27.0" layoutY="11.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Screenshot_2023-12-23_135459-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="67.0" fitWidth="131.0" layoutX="20.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bunder-3.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutY="85.0" prefHeight="254.0" prefWidth="613.0">
+        <content>
+          <AnchorPane minHeight="250.0" minWidth="589.0" prefHeight="250.0" prefWidth="589.0">
+               <children>
+                  <Text fx:id="paragraf" layoutX="32.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="JUSTIFY" wrappingWidth="540.1367492675781" />
+                  <ImageView fitHeight="40.0" fitWidth="28.0" layoutX="586.0" layoutY="119.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Screenshot_2023-12-23_150833-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="28.0" layoutY="119.0" onMouseClicked="#prev" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Screenshot_2023-12-23_135459-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="tokoh" layoutX="248.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Text" textAlignment="CENTER" wrappingWidth="108.33331003785133" />
+                  <AnchorPane layoutX="238.0" layoutY="8.0" maxWidth="128.0" prefHeight="80.0" prefWidth="141.0" style="-fx-background-position: center; -fx-translate-x: 0; -fx-translate-y: 0; -fx-scale-x: 1; -fx-scale-y: 1;">
+                     <children>
+                        <ImageView fx:id="img" cache="true" fitHeight="75.0" fitWidth="51.0" layoutX="39.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 0; -fx-translate-y: 0;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
