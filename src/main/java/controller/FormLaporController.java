@@ -8,6 +8,7 @@ import Model.Laporan;
 import Utilities.LaporanDAO;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.ResourceBundle;
 import java.util.Set;
@@ -15,6 +16,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -28,10 +30,12 @@ import static main.App.laporan;
  */
 public class FormLaporController implements Initializable {
 
-    @FXML
-    private TextField waktu;
+   
     @FXML
     private TextField kronologi;
+    
+    @FXML
+    private DatePicker myDatePicker;
 
     /**
      * Initializes the controller class.
@@ -44,7 +48,7 @@ public class FormLaporController implements Initializable {
     @FXML
     private void kirimLaporan(MouseEvent event) throws IOException {
         var alert = new Alert(Alert.AlertType.INFORMATION);
-        if (waktu.getText().equals("")) {
+        if (myDatePicker.getValue().equals("")) {
             alert.setContentText("waktu tidak boleh kosong");
             alert.show();
             return;
@@ -56,7 +60,7 @@ public class FormLaporController implements Initializable {
         }
         
         var dao = new LaporanDAO();
-        App.member.lapor(waktu.getText(), kronologi.getText());
+        App.member.lapor(myDatePicker.getValue().toString(), kronologi.getText());
         alert.setContentText("Laporan berhasil dibuat");
         alert.show();
         App.setRoot("laporanPages");
@@ -68,4 +72,11 @@ public class FormLaporController implements Initializable {
     private void back(MouseEvent event) throws IOException {
         App.setRoot("laporanAdmin");
     }
+
+    @FXML
+    private void showDate(MouseEvent event) {
+        myDatePicker.show();
+        myDatePicker.getValue().toString();
+    }
+
 }

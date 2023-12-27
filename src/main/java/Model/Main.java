@@ -54,11 +54,11 @@ public class Main {
         
 
         System.out.println("Ruang Chat");
-        Genara ruangChat1 = new Genara();
-
-        member1.chatting(ruangChat1, "Halo Bang");
-        member2.chatting(ruangChat1, "Halo juga ker");
-        admin1.chatting(ruangChat1, "Yoo");
+//        Genara ruangChat1 = new Genara();
+//
+//        member1.chatting(ruangChat1, "Halo Bang");
+//        member2.chatting(ruangChat1, "Halo juga ker");
+//        admin1.chatting(ruangChat1, "Yoo");
 
         member1.showBelaDiri(edukasi);
 

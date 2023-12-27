@@ -45,11 +45,11 @@ public class App extends Application{
     }
     
     public static void setRoot(String fxml) throws IOException {
-        if (fxml.equals("genara")) {
-            var alert = new Alert(Alert.AlertType.INFORMATION, "Coming Soon!!");
-            alert.showAndWait();
-            return;
-        }
+//        if (fxml.equals("genara")) {
+//            var alert = new Alert(Alert.AlertType.INFORMATION, "Coming Soon!!");
+//            alert.showAndWait();
+//            return;
+//        }
         if (scene == null) scene = new Scene(loadFXML(fxml), 610, 400);
         else scene.setRoot(loadFXML(fxml));
     }

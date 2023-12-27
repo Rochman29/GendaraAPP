@@ -60,8 +60,8 @@ public class User {
     public void showPerempi (Education edu){
         edu.showPerempi();
     }
-    public void chatting(Genara genara, String chat){
-        genara.addPesan(this.getNama(), chat);
-        genara.showLastPesan();
-    }
+//    public void chatting(Genara genara, String chat){
+//        genara.addPesan(this.getNama(), chat);
+//        genara.showLastPesan();
+//    }
 }

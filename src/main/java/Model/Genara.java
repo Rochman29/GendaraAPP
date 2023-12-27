@@ -11,24 +11,30 @@ package Model;
 import java.util.ArrayList;
 
 public class Genara {
-    private ArrayList<String> pengirim = new ArrayList<String>();
+    private String pengirim;
 
-    private ArrayList<String> pesan = new ArrayList<String>();
+    private String pesan;
 
-    public void addPesan(String pengirim, String pesan){
-        this.pengirim.add(pengirim);
-        this.pesan.add(pesan);
-    }
-    public void showPesan(){
-        int n = pengirim.size();
-        for(int i = 0; i<n; i++){
-            System.out.println("Pengirim: " + pengirim.get(i));
-            System.out.println("Pesan: " + pesan.get(i));
-        }
+    public Genara(String pengirim, String pesan) {
+        this.pengirim = pengirim;
+        this.pesan = pesan;
     }
 
-    public void showLastPesan() {
-        System.out.println("Pengirim: " + pengirim.get(pengirim.size()-1));
-        System.out.println("Pesan: " + pesan.get(pesan.size()-1));
+    public String getPengirim() {
+        return pengirim;
     }
+
+    public String getPesan() {
+        return pesan;
+    }
+
+    public void setPengirim(String pengirim) {
+        this.pengirim = pengirim;
+    }
+
+    public void setPesan(String pesan) {
+        this.pesan = pesan;
+    }
+    
+    
 }
