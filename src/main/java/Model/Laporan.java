@@ -34,6 +34,8 @@ public class Laporan {
     private String waktu;
     private String kronologis;
     private String status;
+    private String username1;
+ 
 
     public Laporan(String idNumber, String username, String nama, String waktu, String kronologis, String status) {
         this.idNumber = idNumber;
@@ -42,6 +44,8 @@ public class Laporan {
         this.waktu = waktu;
         this.kronologis = kronologis;
         this.status = status;
+    
+     
     }
     public Laporan(){}
     

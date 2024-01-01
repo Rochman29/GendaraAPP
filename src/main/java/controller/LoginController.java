@@ -56,7 +56,7 @@ public class LoginController implements Initializable {
         }
         if (App.admin == null && App.member == null){
             alert.setContentText("Username atau Password salah");
-            alert.show();
+            alert.show();   
             return;
         } else {
             alert.setContentText("Login berhasil");

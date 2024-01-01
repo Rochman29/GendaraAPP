@@ -29,7 +29,7 @@ import main.App;
  */
 public class HomeController implements Initializable {
 
-    private Text paragraf;
+   
     @FXML
     private Text paragraf1;
     @FXML

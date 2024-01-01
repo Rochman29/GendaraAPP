@@ -70,7 +70,7 @@ public class FormLaporController implements Initializable {
 
     @FXML
     private void back(MouseEvent event) throws IOException {
-        App.setRoot("laporanAdmin");
+        App.setRoot("laporanPages");
     }
 
     @FXML

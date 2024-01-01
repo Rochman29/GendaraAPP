@@ -73,9 +73,9 @@ CREATE TABLE IF NOT EXISTS `genara` (
   PRIMARY KEY (`ID`),
   KEY `FK_genara_user` (`username`),
   CONSTRAINT `FK_genara_user` FOREIGN KEY (`username`) REFERENCES `user` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table db_gendara.genara: ~13 rows (approximately)
+-- Dumping data for table db_gendara.genara: ~16 rows (approximately)
 INSERT INTO `genara` (`ID`, `username`, `chat`) VALUES
 	(1, 'Ozan', 'Hey bro'),
 	(2, 'kuc', 'Apa?'),
@@ -89,7 +89,17 @@ INSERT INTO `genara` (`ID`, `username`, `chat`) VALUES
 	(10, 'Oman', 'bismillah'),
 	(11, 'Oman', 'dan '),
 	(12, 'Oman', 'hasilnya'),
-	(13, 'Oman', 'tidak bisa');
+	(13, 'Oman', 'tidak bisa'),
+	(14, 'Oman', 'akhirnya'),
+	(15, 'admin', 'alhamdulilah bisa'),
+	(16, 'Oman', 'iya'),
+	(17, 'admin', 'tes'),
+	(18, 'Ozan', 'haloo'),
+	(19, 'upin', 'Halo'),
+	(20, 'apin', 'Halo juga mba'),
+	(21, 'Oman', 'Main yu'),
+	(22, 'apin', 'Kemana?'),
+	(23, 'admin', 'halo semuanya');
 
 -- Dumping structure for table db_gendara.laporan
 CREATE TABLE IF NOT EXISTS `laporan` (
@@ -99,24 +109,21 @@ CREATE TABLE IF NOT EXISTS `laporan` (
   `waktu` date DEFAULT NULL,
   `kronologis` varchar(500) DEFAULT NULL,
   `status` varchar(15) DEFAULT NULL,
-  `username_member` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `username_admin` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`idNumber`),
-  KEY `FK_laporan_user` (`username_member`),
-  KEY `FK_laporan_user_2` (`username_admin`),
-  CONSTRAINT `FK_laporan_user` FOREIGN KEY (`username_member`) REFERENCES `user` (`username`),
-  CONSTRAINT `FK_laporan_user_2` FOREIGN KEY (`username_admin`) REFERENCES `user` (`username`)
+  KEY `FK_laporan_user` (`username`),
+  CONSTRAINT `FK_laporan_user` FOREIGN KEY (`username`) REFERENCES `user` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table db_gendara.laporan: ~7 rows (approximately)
-INSERT INTO `laporan` (`idNumber`, `username`, `nama`, `waktu`, `kronologis`, `status`, `username_member`, `username_admin`) VALUES
-	('2cvYF', 'Oman', 'Rochman', '2023-11-29', 'tes date picker', 'Unverified', 'Oman', 'Admin'),
-	('INE7d', 'Oman', 'Rochman', '2024-04-23', 'Ketika sedang bersepeda', 'Unverified', 'Oman', 'Admin'),
-	('j7mEZ', 'Oman', 'Rochman', '2024-03-21', 'Ketika sedang tidur', 'verified', 'Oman', 'Admin'),
-	('jVHyz', 'Ozan', 'Fauzan', '2023-12-15', 'Saya sedang jalan di desa, tiba-tiba ada mobil hitam datang.', 'Unverified', 'Oman', 'Admin'),
-	('pLJsv', 'kuc', 'koceng', '2022-02-11', 'Tengah malam di hutan', 'Unverified', 'Oman', 'Admin'),
-	('Tnbvf', 'erlangga', 'Erlangga', '2023-12-27', 'Saat saya sedang membeli minyak goreng di warung', 'Unverified', 'Oman', 'Admin'),
-	('yQaAw', 'Oman', 'Rochman', '2023-12-01', 'tes date', 'Unverified', 'Oman', 'Admin');
+INSERT INTO `laporan` (`idNumber`, `username`, `nama`, `waktu`, `kronologis`, `status`) VALUES
+	('2cvYF', 'Oman', 'Rochman', '2023-11-29', 'tes date picker', 'Unverified'),
+	('INE7d', 'Oman', 'Rochman', '2024-04-23', 'Ketika sedang bersepeda', 'Unverified'),
+	('j7mEZ', 'Oman', 'Rochman', '2024-03-21', 'Ketika sedang tidur', 'verified'),
+	('jVHyz', 'Ozan', 'Fauzan', '2023-12-15', 'Saya sedang jalan di desa, tiba-tiba ada mobil hitam datang.', 'Unverified'),
+	('pLJsv', 'kuc', 'koceng', '2022-02-11', 'Tengah malam di hutan', 'Unverified'),
+	('SiR1k', 'apin', 'Apin', '2024-01-01', 'Tadi pagi di rumah sendirian. ', 'verified'),
+	('Tnbvf', 'erlangga', 'Erlangga', '2023-12-27', 'Saat saya sedang membeli minyak goreng di warung', 'Unverified'),
+	('yQaAw', 'Oman', 'Rochman', '2023-12-01', 'tes date', 'Unverified');
 
 -- Dumping structure for table db_gendara.perempi
 CREATE TABLE IF NOT EXISTS `perempi` (
@@ -124,7 +131,7 @@ CREATE TABLE IF NOT EXISTS `perempi` (
   `img` varchar(500) DEFAULT NULL,
   `tokoh` varchar(50) DEFAULT NULL,
   `materi` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`idNumber`),
   KEY `FK_perempi_user` (`username`),
   CONSTRAINT `FK_perempi_user` FOREIGN KEY (`username`) REFERENCES `user` (`username`)
@@ -147,14 +154,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table db_gendara.user: ~5 rows (approximately)
+-- Dumping data for table db_gendara.user: ~8 rows (approximately)
 INSERT INTO `user` (`nama`, `email`, `username`, `password`, `role`) VALUES
 	('Admin', 'admin@gmail.com', 'admin', 'admin', 'Admin'),
+	('Apin', 'apin@gmail.com', 'apin', 'apin1234', 'Member'),
 	('Erlangga', 'erlangga@gmail.com', 'erlangga', 'erlangga123', 'Member'),
 	('Fikri', 'fikri@gmail.com', 'fikri', 'fikri123', 'Member'),
 	('koceng', 'koceng@example.com', 'kuc', 'password', 'Member'),
 	('Rochman', 'Oman@gmail.com', 'Oman', 'Oman123', 'Member'),
-	('Fauzan', 'fauzan@gmail.com', 'Ozan', 'Ozan123', 'Member');
+	('Fauzan', 'fauzan@gmail.com', 'Ozan', 'Ozan123', 'Member'),
+	('Upin', 'upin@gmail.com', 'upin', 'upin1234', 'Member');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

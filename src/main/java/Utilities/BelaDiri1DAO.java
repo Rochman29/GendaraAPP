@@ -38,7 +38,7 @@ public class BelaDiri1DAO {
     
     public void save (BelaDiri1 belaDiri){
         try {
-            query = "INSERT INTO beladiri1 VALUES ('%d','%s')";
+            query = "INSERT INTO beladiri1 VALUES ('%d','%s', 'Admin')";
             query = String.format(
                     query,
                     this.getCount() + 1,

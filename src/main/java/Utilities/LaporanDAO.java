@@ -37,14 +37,16 @@ public class LaporanDAO {
     }
     public void saveLapor (Laporan laporan){
         try {
-            query = "INSERT INTO laporan VALUES ('%s','%s','%s', '%s', '%s')";
+            query = "INSERT INTO laporan VALUES ('%s','%s','%s', '%s', '%s', '%s', '%s')";
             query = String.format(
                     query,
                     laporan.getUsername(),
                     laporan.getNama(),
                     laporan.getWaktu(),
                     laporan.getKronologis(),
-                    laporan.getStatus());
+                    laporan.getStatus(),
+                    laporan.getUsername(),
+                    "Admin");
             stmt.executeUpdate(query);
             System.out.println("Berhasil menambahkan data!");
         } catch (SQLException ex){
